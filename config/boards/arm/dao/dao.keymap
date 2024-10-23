@@ -60,10 +60,10 @@
 
         num_layer {
             bindings = <
-  &kp F1        &kp F2      &kp F3     &kp F4     &kp F5     &kp F6      &kp F7       &kp F8      &kp F9     &kp F10   &kp F11   &kp F12
-  &kp GRAVE     &kp N1      &kp N2     &kp N3     &kp N4     &kp N5      &kp N6       &kp N7      &kp N8     &kp N9    &kp N0    &trans
-  &kp LS(LGUI)  &kp C_MENU  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LGUI    &kp KP_PLUS  &kp PERIOD  &kp MINUS  &kp LBKT  &kp RBKT  &kp BSLH
-                                       &kp ESC    &trans     &trans      &trans       &trans      &kp EQUAL
+  &kp F1        &kp F2             &kp F3     &kp F4     &kp F5     &kp F6      &kp F7       &kp F8      &kp F9     &kp F10   &kp F11   &kp F12
+  &kp GRAVE     &kp N1             &kp N2     &kp N3     &kp N4     &kp N5      &kp N6       &kp N7      &kp N8     &kp N9    &kp N0    &trans
+  &kp LS(LGUI)  &kp K_APPLICATION  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LGUI    &kp KP_PLUS  &kp PERIOD  &kp MINUS  &kp LBKT  &kp RBKT  &kp BSLH
+                                              &kp ESC    &trans     &trans      &trans       &trans      &kp EQUAL
             >;
         };
 

@@ -44,6 +44,11 @@
             bindings = <&kp LA(TAB)>;
             key-positions = <37 38>;
         };
+
+        combo_eu_is_alt_tab {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <15 16>;
+        };
     };
 
     keymap {

@@ -5,8 +5,8 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 
 #define DEF 0
 #define NUM 1
@@ -14,15 +14,16 @@
 #define ADJ 3
 
 &lt { quick_tap_ms = <200>; };
+
 &mt { quick_tap_ms = <200>; };
 
 / {
     chosen {
         zmk,matrix_transform = &default_transform;
+
         // zmk,matrix_transform = &extra_keys_transform;
     };
 };
-
 
 / {
     combos {
@@ -38,9 +39,14 @@
             key-positions = <37 38>;
         };
 
-        combo_eu_is_alt_tab {
+        combo_oe_is_alt_tab {
             bindings = <&kp LA(TAB)>;
-            key-positions = <15 16>;
+            key-positions = <15 14>;
+        };
+
+        combo_m1_m2_is_super {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <39 40>;
         };
     };
 
@@ -84,4 +90,3 @@
         };
     };
 };
-

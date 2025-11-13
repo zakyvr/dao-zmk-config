@@ -76,28 +76,28 @@
 
         default_layer {
             bindings = <
-  &kp TAB     &kp SINGLE_QUOTE  &kp COMMA  &kp PERIOD  &kp P      &kp Y      &kp F    &kp G    &kp C    &kp R  &kp L  &kp FSLH
-  &sk LSHIFT  &kp A             &kp O      &kp E       &kp U      &kp I      &kp D    &kp H    &kp T    &kp N  &kp S  &sk RSHIFT
-  &kp LALT    &kp SEMICOLON     &kp Q      &kp J       &kp K      &kp X      &kp B    &kp M    &kp W    &kp V  &kp Z  &kp MINUS
-                                           &kp LCTRL   &kp SPACE  &mo NUM    &mo NUM  &mo NAV  &kp RET
+  &kp TAB     &kp SINGLE_QUOTE  &kp COMMA  &kp PERIOD  &kp P      &kp Y      &kp F         &kp G    &kp C    &kp R  &kp L  &kp FSLH
+  &sk LSHIFT  &kp A             &kp O      &kp E       &kp U      &kp I      &kp D         &kp H    &kp T    &kp N  &kp S  &sk RSHIFT
+  &kp LALT    &kp SEMICOLON     &kp Q      &kp J       &kp K      &kp X      &kp B         &kp M    &kp W    &kp V  &kp Z  &kp MINUS
+                                           &kp LCTRL   &kp SPACE  &mo NUM    &lm PWM LGUI  &mo NAV  &kp RET
             >;
         };
 
         num_layer {
             bindings = <
-  &kp F1             &kp F2        &kp F3     &kp F4     &kp F5     &kp F6      &kp F7       &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
-  &kp GRAVE          &kp N1        &kp N2     &kp N3     &kp N4     &kp N5      &kp N6       &kp N7     &kp N8           &kp N9    &kp N0    &trans
-  &kp K_APPLICATION  &kp LS(LGUI)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LGUI    &kp KP_PLUS  &kp MINUS  &kp KP_ASTERISK  &kp LBKT  &kp RBKT  &kp BSLH
-                                              &kp ESC    &trans     &kp EQUAL   &kp PERIOD   &trans     &kp FSLH
+  &kp F1             &kp F2        &kp F3     &kp F4     &kp F5     &kp F6       &kp F7       &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
+  &kp GRAVE          &kp N1        &kp N2     &kp N3     &kp N4     &kp N5       &kp N6       &kp N7     &kp N8           &kp N9    &kp N0    &trans
+  &kp K_APPLICATION  &kp LS(LGUI)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp EQUAL    &kp KP_PLUS  &kp MINUS  &kp KP_ASTERISK  &kp LBKT  &kp RBKT  &kp BSLH
+                                              &kp ESC    &trans     &trans       &kp PERIOD   &trans     &kp FSLH
             >;
         };
 
         nav_layer {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans  &trans    &kp LC(LS(PRINTSCREEN))  &kp LC(M)  &kp LALT   &kp SLCK   &kp CLCK  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
+  &trans  &trans  &trans  &trans  &trans  &trans    &kp LC(LS(PRINTSCREEN))  &kp PSCRN  &kp LALT   &kp SLCK   &kp CLCK  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
   &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_UP                &kp HOME   &kp UP     &kp END    &kp DEL   &mo ADJ
   &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_DN                &kp LEFT   &kp DOWN   &kp RIGHT  &kp BSPC  &kp INS
-                          &trans  &trans  &trans    &kp PSCRN                &trans     &kp RCTRL
+                          &trans  &trans  &trans    &kp LGUI                 &trans     &kp RCTRL
             >;
         };
 
@@ -112,10 +112,10 @@
 
         paperwm {
             bindings = <
-  &kp TAB    &trans         &trans  &trans     &trans  &trans    &kp F      &kp I     &kp O      &kp R      &kp GRAVE  &kp ESC
-  &kp LSHFT  &kp LS(LSHFT)  &kp N2  &kp N3     &kp N4  &kp N5    &kp PG_UP  &kp HOME  &kp LCTRL  &kp END    &kp UP     &kp TAB
-  &kp LALT   &kp N5         &kp N6  &kp N7     &kp N8  &kp N9    &kp PG_DN  &kp LEFT  &kp LSHFT  &kp RIGHT  &kp DOWN   &kp H
-                                    &kp LCTRL  &trans  &trans    &trans     &trans    &kp TAB
+  &trans  &trans  &trans  &trans  &trans  &trans    &kp F      &kp I     &kp O      &kp R      &kp GRAVE  &kp ESC
+  &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_UP  &kp HOME  &kp LCTRL  &kp END    &kp UP     &kp TAB
+  &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_DN  &kp LEFT  &kp LSHFT  &kp RIGHT  &kp DOWN   &kp H
+                                  &trans  &trans    &trans    &trans     &trans    &kp TAB
             >;
         };
     };

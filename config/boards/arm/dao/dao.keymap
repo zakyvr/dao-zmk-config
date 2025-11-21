@@ -85,10 +85,10 @@
 
         num_layer {
             bindings = <
-  &kp F1             &kp F2        &kp F3     &kp F4     &kp F5     &kp F6       &kp F7       &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
-  &kp GRAVE          &kp N1        &kp N2     &kp N3     &kp N4     &kp N5       &kp N6       &kp N7     &kp N8           &kp N9    &kp N0    &trans
-  &kp K_APPLICATION  &kp LS(LGUI)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp EQUAL    &kp KP_PLUS  &kp MINUS  &kp KP_ASTERISK  &kp LBKT  &kp RBKT  &kp BSLH
-                                              &kp ESC    &trans     &trans       &kp PERIOD   &trans     &kp FSLH
+  &kp F1     &kp F2  &kp F3     &kp F4     &kp F5     &kp F6     &kp F7       &kp F8       &kp F9     &kp F10          &kp F11   &kp F12
+  &kp GRAVE  &kp N1  &kp N2     &kp N3     &kp N4     &kp N5     &kp N6       &kp N7       &kp N8     &kp N9           &kp N0    &trans
+  &kp LGUI   &kp K_APPLICATION  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp EQUAL    &kp KP_PLUS  &kp MINUS  &kp KP_ASTERISK  &kp LBKT  &kp RBKT  &kp BSLH
+                                           &kp ESC    &trans     &trans       &kp PERIOD   &trans     &kp FSLH
             >;
         };
 
@@ -115,7 +115,7 @@
   &trans  &trans  &trans  &trans  &trans  &trans    &kp F      &kp I     &kp O      &kp R      &kp GRAVE  &kp ESC
   &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_UP  &kp HOME  &kp LCTRL  &kp END    &kp UP     &kp TAB
   &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_DN  &kp LEFT  &kp LSHFT  &kp RIGHT  &kp DOWN   &kp H
-                                  &trans  &trans    &trans    &trans     &trans    &kp TAB
+                                  &trans  &trans    &trans     &trans    &kp C      &kp T
             >;
         };
     };

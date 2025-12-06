@@ -50,7 +50,7 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_ctl_spc_is_alt {
+        combo_ctl_spc_is_super {
             bindings = <&kp LGUI>;
             key-positions = <36 37>;
         };
@@ -65,8 +65,15 @@
             key-positions = <15 14>;
         };
 
-        combo_m1_m2_is_super {
-            bindings = <&lm PWM LGUI>;
+        /* Previous combo of 2 thumb keys to "layer + super"
+         *  combo_m1_m2_is_super {
+         *    bindings = <&lm PWM LGUI>;
+         *    key-positions = <39 40>;
+         * }; 
+         */
+
+        combo_thumb1_thumb2_is_m1 {
+            bindings = <&mo 1>;
             key-positions = <39 40>;
         };
     };
@@ -95,8 +102,8 @@
         nav_layer {
             bindings = <
   &trans  &trans  &trans  &trans  &trans  &trans    &kp LC(LS(PRINTSCREEN))  &kp PSCRN  &kp LALT   &kp SLCK   &kp CLCK  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
-  &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_UP                &kp HOME   &kp UP     &kp END    &kp DEL   &mo ADJ
-  &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_DN                &kp LEFT   &kp DOWN   &kp RIGHT  &kp BSPC  &kp INS
+  &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_UP                &kp LEFT   &kp UP     &kp RIGHT  &kp DEL   &mo ADJ
+  &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_DN                &kp HOME   &kp DOWN   &kp END    &kp BSPC  &kp INS
                           &trans  &trans  &trans    &kp LGUI                 &trans     &kp RCTRL
             >;
         };
@@ -113,8 +120,8 @@
         paperwm {
             bindings = <
   &trans  &trans  &trans  &trans  &trans  &trans    &kp F      &kp I     &kp O      &kp R      &kp GRAVE  &kp ESC
-  &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_UP  &kp HOME  &kp LCTRL  &kp END    &kp UP     &kp TAB
-  &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_DN  &kp LEFT  &kp LSHFT  &kp RIGHT  &kp DOWN   &kp H
+  &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_UP  &kp LEFT  &kp LCTRL  &kp RIGHT  &kp UP     &kp TAB
+  &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_DN  &kp HOME  &kp LSHFT  &kp END    &kp DOWN   &kp H
                                   &trans  &trans    &trans     &trans    &kp C      &kp T
             >;
         };

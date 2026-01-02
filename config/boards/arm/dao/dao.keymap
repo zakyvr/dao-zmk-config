@@ -101,7 +101,7 @@
 
         nav_layer {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans  &trans    &kp LC(LS(PRINTSCREEN))  &kp PSCRN  &kp LALT   &kp SLCK   &kp CLCK  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
+  &trans  &trans  &trans  &trans  &trans  &trans    &kp LC(LS(PRINTSCREEN))  &kp LALT   &kp SLCK   &kp PSCRN  &kp CLCK  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
   &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_UP                &kp LEFT   &kp UP     &kp RIGHT  &kp DEL   &mo ADJ
   &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_DN                &kp HOME   &kp DOWN   &kp END    &kp BSPC  &kp INS
                           &trans  &trans  &trans    &kp LGUI                 &trans     &kp RCTRL
